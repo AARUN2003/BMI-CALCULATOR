@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="JS app to calculates Body Mass Index">
+    <meta name="author" content="Aarun">
+    <link rel="stylesheet" href="bmi.css">
+    <title>BMI CALCULATOR</title>
+     <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+    <div class="bmi">
+      <h2>BODY MASS INDEX CALCULATOR</h2>
+      <p class="text">HEIGHT IN CM</p><input type="text" id="height">
+      <p class="text">WEIGHT IN KG</p><input type="text" id="weight">
+      <p id="result"></p><button id="btn">CALCULATE</button>
+    </div>
+    <div class="chart">
+      <table>
+        <thead>
+          <tr>
+            <th>BMI</th>
+            <th>CATEGORY</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-column="bmi">less than 18.5</td>
+            <td data-column="category">Underweight</td>
+          </tr>
+          <tr>
+            <td data-column="bmi">between 18.5 and 24.9</td>
+            <td data-column="category">Ideal</td>
+          </tr>
+          <tr>
+            <td data-column="bmi">between 25 and 29.9</td>
+            <td data-column="category">Overweight</td>
+          </tr>
+          <tr>
+            <td data-column="bmi">over 30 </td>
+            <td data-column="category">Obesity</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="bmi.js" ></script>
+    <footer class="footer">
+      <p class="footer__title">AARUN VENGATESAN</p>
+      <div class="footer__social">
+          <a href="https://github.com/AARUN2003?tab=repositories" class="footer__icon"><i class='bx bxl-github' ></i></a>
+          
+          <a href="https://www.linkedin.com/in/aarun-v-44a934248?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app/" class="footer__icon"><i class='bx bxl-linkedin' ></i></a>
+      </div>
+      <p>&#169; 2024 copyright all right reserved</p>
+     </footer>
+  </body>
+</html>
